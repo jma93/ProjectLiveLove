@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Account Setup | My Live Love</title>
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
+          integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="css/forms.css"/>
+
+
+</head>
+
+
+<body>
+
+<nav id="topNav" class="navbar static-top navbar-toggleable-sm navbar-inverse bg-inverse">
+    <div class="navbar-collapse collapse">
+        <!--Hack to center navbar brand relatively-->
+    </div>
+    <a class="navbar-brand mx-auto font-bold" href="home.php">
+        <img src="img/mylivelovewhite.png" class="d-inline-block align-middle" width="50" height="50" alt="">
+    </a>
+    <button class="navbar-toggler navbar-toggler-right navbar-drawer-expand" type="button" data-toggle="collapse"
+            data-target="#mobileLogin">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div id="windowsLogin" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav ml-auto">
+
+            <li class="nav-item">
+                <a class="nav-link mylivelove-font" style="color:whitesmoke;" href="company-profile.php">Login</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link mylivelove-font" style="color:#C11D1F;" href="#">Sign up</a>
+            </li>
+        </ul>
+    </div>
+
+    <div id="mobileLogin" class="collapse">
+        <ul class="nav navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="#">Login</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Signup</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<!--Navbar end-->
+
+<div class="container">
+    <h2 style="text-align:center">Set Up Your Account</h2>
+
+    <form id = "registration2Form" class="form-registration" role="form">
+        <input type="text" class="form-control"
+               id="phone" placeholder="phone number"
+               required autofocus>
+        <input type="text" class="form-control"
+               id="location" placeholder="location " required>
+        <br>
+
+        <h4>Interests (Select all that apply)</h4>
+        <div id = "interests">
+            <input class="interest_button" type="submit" value="poverty & relief"/>
+            <input class="interest_button" type="submit" value="health services"/>
+            <input class="interest_button" type="submit" value="community building"/>
+            <br>
+            <input class="interest_button" type="submit" value="social justice"/>
+            <input class="interest_button" type="submit" value="environmentalism"/>
+            <input class="interest_button" type="submit" value="other opportunities"/>
+        </div>
+
+        <button class="button" type="submit"
+                id="finish">Finish
+        </button>
+    </form>
+</div>
+
+</body>
+</html>
