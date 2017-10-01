@@ -1,11 +1,13 @@
 <?php
 require 'dbConnection.php';
 
-$firstname = $_POST["firstname"];
-$lastname = $_POST["lastname"];
-$username = $_POST["username"];
-$password = $_POST["password"];
-$email = $_POST["email"];
+
+$interest1 = $_POST["interest1"];
+$interest2 = $_POST["interest2"];
+$interest3 = $_POST["interest3"];
+$interest4 = $_POST["interest4"];
+$interest5 = $_POST["interest5"];
+$interest6 = $_POST["interest6"];
 $accountType = $_POST["accountType"];
 
 //    $phonenumber= $_POST["phonenumber"];

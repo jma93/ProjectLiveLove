@@ -18,6 +18,6 @@ $DB_PASSWORD = '';
 $DB_HOST = 'localhost';
 $DB_NAME = 'mylivelo_mylivelove';
 $dbc = new mysqli($DB_HOST, $DB_USER, $DB_PASSWORD, $DB_NAME);
-
+OR die('Could not connect to database' .  mysqli_connect_error())
 
 ?>
