@@ -1,4 +1,5 @@
 <?php
+// make sure to get rid of this later
 require 'php/dbConnection.php';
 //Get the relevant data from the database for this company
 
