@@ -14,6 +14,8 @@ $(function () {
             },
             success: function (data) {
                 alert(data);
+                location.href = "http://localhost/projectlivelove/registration2.html"
+
             },
             error: function (xhr, ajaxOptions, thrownError) {
                 alert(xhr.status);
