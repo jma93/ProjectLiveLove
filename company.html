@@ -66,20 +66,28 @@
     <form id = "registrationForm" class="form-registration" role="form">
         <h4 class="form-registration-heading"></h4>
         <input type="text" class="form-control"
-               id="company" placeholder="Name of Organization"
+               id="companyName" placeholder="Name of Organization"
                required autofocus>
         <input type="text" class="form-control"
                id="firstname" placeholder="First Name" required>
+
         <input type="text" class="form-control"
-               id="firstname" placeholder="Last Name" required>      
+               id="lastname" placeholder="Last Name" required>   
+
         <input type="text" class="form-control"
                id="username" placeholder="username" required>
+
         <input type="text" class="form-control"
                id="email" placeholder="email address " required>
+
         <input type="password" class="form-control"
                id="password" placeholder="password " required>
+
         <input type="password" class="form-control"
-               id="confirm_password" placeholder="confirm password " required><br>
+               id="confirm_password" placeholder="confirm password " required>
+               
+        <input type="text" class="form-control"
+               id="companyDescription" placeholder="Name your main Goals" required><br>
 
         <button class="button" type="submit"
                 id="register">Register
@@ -90,10 +98,6 @@
     <div style="text-align:center">
         <a href="login.php">Already have an account?</a>
     </div>
-    <div style="text-align:center">
-        <a href="registration2.html">Are you a non-profit looking to join?</a>
-    </div>
-
 
 </div>
 
@@ -101,7 +105,7 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"
         integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
         crossorigin="anonymous"></script>
-<script src="js/registration.js"></script>
+<script src="js/registrationCompany.js"></script>
 <script src="js/logout.js"></script>
 
 </body>
