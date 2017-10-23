@@ -1,16 +1,13 @@
 <?php
 //Get the relevant data from the database for this company, make sure to delete this later
+// make sure to do the correct sql query later
 require 'php/dbConnection.php';
-$stmt = $dbc->prepare('SELECT * FROM accounts INNER JOIN company ON accounts.username = company.username WHERE accounts.username = ?');
+$stmt = $dbc->prepare('SELECT * FROM accounts INNER JOIN company ON accounts.username = company.companyName WHERE accounts.username = ?');
 //s means string
 $stmt->bind_param('s', $query['id']);
 $stmt->execute();
-
 $response = $stmt->get_result();
-
 $row = mysqli_fetch_assoc($response); //Gets the first (and only) row as an associative array
-
-
 ?>
 <div class="padding" style="padding-top: 50px;">
 

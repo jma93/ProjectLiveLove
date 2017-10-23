@@ -1,3 +1,5 @@
+//Function that handles finding orgniazation names
+
 $(function () {
     var source = $('#event-template').html();
     var template = Handlebars.compile(source);
