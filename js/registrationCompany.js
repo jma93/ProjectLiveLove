@@ -17,7 +17,6 @@ $(function () {
             },
             success: function (data) {
                 alert(data);
-                location.href = "http://localhost/projectlivelove/home.php"
 
             },
             error: function (xhr, ajaxOptions, thrownError) {

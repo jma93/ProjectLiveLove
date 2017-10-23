@@ -1,7 +1,7 @@
 <?php
 //Get the relevant data from the database for this company, make sure to delete this later
 require 'php/dbConnection.php';
-$stmt = $dbc->prepare('SELECT * FROM accounts INNER JOIN companies ON accounts.username = companies.username WHERE accounts.username = ?');
+$stmt = $dbc->prepare('SELECT * FROM accounts INNER JOIN company ON accounts.username = company.username WHERE accounts.username = ?');
 //s means string
 $stmt->bind_param('s', $query['id']);
 $stmt->execute();
