@@ -13,11 +13,9 @@ $(function () {
                 password: $("#password").val(),
                 companyDescription: $("#companyDescription").val(),
                 accountType: "USER"
-
             },
             success: function (data) {
                 alert(data);
-
             },
             error: function (xhr, ajaxOptions, thrownError) {
                 alert(xhr.status);

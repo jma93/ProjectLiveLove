@@ -122,11 +122,31 @@ $row = mysqli_fetch_assoc($response); //Gets the first (and only) row as an asso
         {{/each}}
     </script>
 
+<!--creates the create event form -->
+<div class="container">
+    <h2 style="text-align:center">Create an Event!</h2>
 
+    <form id = "createEvent" class="form-registration" role="form">
+        <h4 class="form-registration-heading"></h4>
+        <input type="text" class="form-control"
+               id="eventName" placeholder="What is the event name? "
+               required autofocus>
+        <input type="text" class="form-control"
+               id="eventLocation" placeholder="Where is the event?" required>
+        <input type="datetime-local" class="form-control"
+               id="eventTime" placeholder="what time is the event?">
+        <input type="text" class="form-control"
+               id="event Description" placeholder="Description of Event" required><br>
+        <button class="button" type="submit"
+                id="register">Create Event!             
+        </button>
+    </form>
+
+</div>
     <!-- Create Event Modal -->
-    <div class="modal fade" id="createEventModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <!-- <div class="modal fade" id="createEventModal" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog" role="document">
-            <div class="modal-content">
+            <div class="modal-content">  
                 <div class="modal-header">
                     <h5 class="modal-title">Create an event</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -141,17 +161,15 @@ $row = mysqli_fetch_assoc($response); //Gets the first (and only) row as an asso
                                 <input type="text" class="form-control" id="eventName" placeholder="Event Name">
                             </div>
                         </div>
-
                         <div class="form-group row">
                             <label for="eventAddress" class="col-sm-3 col-form-label">Address:</label>
                             <div class="col-sm-9">
-                                <input type="text" class="form-control" id="eventName" placeholder="Event Address">
+                                <input type="text" class="form-control" id="eventLocation" placeholder="Event Address">
                             </div>
                         </div>
-
                         <div class="form-group">
                             <label for="exampleTextarea">Event Description</label>
-                            <textarea class="form-control" id="exampleTextarea" rows="3"
+                            <textarea class="form-control" id="eventDescription" rows="3"
                                       placeholder="Please enter a short description of your event"></textarea>
                         </div>
                     </form>
@@ -161,9 +179,13 @@ $row = mysqli_fetch_assoc($response); //Gets the first (and only) row as an asso
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 </div>
-
+<script src="js/eventCreation.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"
+        integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
+        crossorigin="anonymous"></script>
 <br>
 <br>
 

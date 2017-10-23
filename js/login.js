@@ -26,7 +26,6 @@ $(function () {
                  -1:  string_a < string_b
                  1:  string_a > string_b
                  */
-
             },
             error: function (xhr, ajaxOptions, thrownError) {
                 // alert(xhr.status);
