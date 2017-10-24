@@ -5,15 +5,14 @@ $(function () {
             type: 'POST',
             url: '/ProjectLiveLove/php/eventCreation.php', // use .. to "go up" (out of the folder)
             data: {
-                eventName: $("#eventName").val(), //hashtag means id, . means class
+                //get data from the event form in company-profile.php
+                eventName: $("#eventName").val(),
                 eventLocation: $("#eventLocation").val(),
                 eventTime: $("#eventTime").val(), //getting the values from what was inputted in the form
                 eventDescription: $("#eventDescription").val()
             },
             success: function (data) {
                 alert(data);
-               
-
             },
             error: function (xhr, ajaxOptions, thrownError) {
                 alert(xhr.status);

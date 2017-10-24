@@ -133,10 +133,10 @@ $row = mysqli_fetch_assoc($response); //Gets the first (and only) row as an asso
                required autofocus>
         <input type="text" class="form-control"
                id="eventLocation" placeholder="Where is the event?" required>
-        <input type="datetime-local" class="form-control"
+        <input type="text" class="form-control"
                id="eventTime" placeholder="what time is the event?">
         <input type="text" class="form-control"
-               id="event Description" placeholder="Description of Event" required><br>
+               id="eventDescription" placeholder="Description of Event" required><br>
         <button class="button" type="submit"
                 id="register">Create Event!             
         </button>
@@ -181,11 +181,12 @@ $row = mysqli_fetch_assoc($response); //Gets the first (and only) row as an asso
         </div>
     </div> -->
 </div>
-<script src="js/eventCreation.js"></script>
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"
         integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
         crossorigin="anonymous"></script>
+<script src="js/eventCreation.js"></script>
 <br>
 <br>
 
