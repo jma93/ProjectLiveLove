@@ -30,6 +30,12 @@ a:hover {
     color: #C11D1F;
 }
 
+label {
+    display: inline;
+    width: 140px;
+    text-align: right;
+}
+
 .button {
     background-color: #C11D1F;
     border: none;
