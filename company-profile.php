@@ -201,4 +201,3 @@ $row = mysqli_fetch_assoc($response); //Gets the first (and only) row as an asso
 <script src="js/eventCreation.js"></script>
 <br>
 <br>
-

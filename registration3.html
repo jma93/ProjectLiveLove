@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Register | My Live Love</title>
+    <title>Account Setup | My Live Love</title>
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
           integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
@@ -16,6 +16,7 @@
 
     <link rel="stylesheet" type="text/css" href="css/style.css"/>
     <link rel="stylesheet" type="text/css" href="css/forms.css"/>
+    <link rel="stylesheet" type="text/css" href="css/logo.css"/>
 
 
 </head>
@@ -38,7 +39,7 @@
         <ul class="nav navbar-nav ml-auto">
 
             <li class="nav-item">
-                <a class="nav-link mylivelove-font" style="color:whitesmoke;" href="login.php">Login</a>
+                <a class="nav-link mylivelove-font" style="color:whitesmoke;" href="company-profile.php">Login</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link mylivelove-font" style="color:#C11D1F;" href="#">Sign up</a>
@@ -59,52 +60,18 @@
 </nav>
 <!--Navbar end-->
 
-
 <div class="container">
-    <h2 style="text-align:center">Register</h2>
+    <h2 style="text-align:center">Select a Company</h2>
 
-    <form id = "registrationForm" class="form-registration" role="form">
-        <h4 class="form-registration-heading"></h4>
-        <label>First Name</label>
-        <input type="text" class="form-control"
-               id="firstname" placeholder="first name "
-               required autofocus>
-        <label>Last Name</label>
-        <input type="text" class="form-control"
-               id="lastname" placeholder="last name " required>
-        <label>Username</label>
-        <input type="text" class="form-control"
-               id="username" placeholder="username " required>
-        <label>Email Address</label>
-        <input type="email" class="form-control"
-               id="email" placeholder="email address " required>
-        <label>Password</label>
-        <input type="password" class="form-control"
-               id="password" placeholder="password " required>
-        <label>Confirm Password</label>
-        <input type="password" class="form-control"
-               id="confirm_password" placeholder="confirm password " required><br>
+    <form id = "registration2Form" class="form-registration" role="form">
+
+        <h4 style="text-align:center"> Based on Your Interest</h4>
+
         <button class="button" type="submit"
-                id="register">Register               
+                id="finish">Furniture Bank Atlanta
         </button>
     </form>
-
-    <div style="text-align:center">
-        <a href="login.php">Already have an account?</a>
-    </div>
-    <div style="text-align:center">
-        <a href="company.html">Are you a non-profit organization looking to join?</a>
-    </div>
-
-
 </div>
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"
-        integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
-        crossorigin="anonymous"></script>
-<script src="js/registration.js"></script>
-<script src="js/logout.js"></script>
 
 </body>
 </html>

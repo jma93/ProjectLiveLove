@@ -11,6 +11,8 @@ $(function () {
                 email: $("#email").val(),
                 password: $("#password").val(),
                 accountType: "USER"
+                // alert("message");
+                // checkEmail(email);
             },
             success: function (data) {
                 alert(data);
@@ -25,6 +27,13 @@ $(function () {
     });
 
 });
+
+function checkEmail(email) {
+    if (email.search("@") == -1) {
+        alert("wrong email format")
+    }
+
+}
 
 //when someone clicks register, take what they inputted and make it into an object that can be sent to the php server
 
