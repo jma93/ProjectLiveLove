@@ -10,15 +10,15 @@ $eventDescription = $_POST["eventDescription"];
 
 
 //Check if the event exist in the first place
-$stmt = $dbc->prepare('SELECT * FROM event WHERE eventName = ?');
-//s means string
-$stmt->bind_param('s', $username);
-//$query = "(SELECT * FROM accounts WHERE username= $username)";
-$stmt->execute();
-$response = $stmt->get_result();
-if (!$stmt->execute()) {
-    echo "the statement was not executed";
-}
+// $stmt = $dbc->prepare('SELECT * FROM event WHERE eventName = ?');
+// //s means string
+// $stmt->bind_param('s', $eventName);
+// //$query = "(SELECT * FROM accounts WHERE username= $username)";
+// $stmt->execute();
+// $response = $stmt->get_result();
+// if (!$stmt->execute()) {
+//     echo "the statement was not executed";
+// }
 
 $stmt = $dbc -> prepare('INSERT INTO event(eventName, eventLocation, eventTime, eventDescription) VALUES(?,?,?,?)');
 if ($dbc->connect_error) {
@@ -30,7 +30,7 @@ $stmt->bind_param('ssss', $eventName, $eventLocation, $eventTime, $eventDescript
 $event_created = true;
 $stmt->execute();
 if (!$stmt->execute()) {
-    $event_created = False;
+    $event_created = True;
 }
 if ($event_created) {
     echo "Event created!";
