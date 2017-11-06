@@ -1,5 +1,6 @@
 <?php
 require 'dbConnection.php';
+session_start();
 
 //create variable names by getting values from submit
 $eventName = $_POST["eventName"];
@@ -7,17 +8,29 @@ $eventLocation = $_POST["eventLocation"];
 $eventTime = $_POST["eventTime"];
 $eventDescription = $_POST["eventDescription"];
 
-$stmt = $dbc -> prepare("INSERT INTO event(eventName, eventLocation, eventTime, eventDescription) VALUES(?,?,?,?)");
+
+//Check if the event exist in the first place
+$stmt = $dbc->prepare('SELECT * FROM event WHERE eventName = ?');
+//s means string
+$stmt->bind_param('s', $username);
+//$query = "(SELECT * FROM accounts WHERE username= $username)";
+$stmt->execute();
+$response = $stmt->get_result();
+if (!$stmt->execute()) {
+    echo "the statement was not executed";
+}
+
+$stmt = $dbc -> prepare('INSERT INTO event(eventName, eventLocation, eventTime, eventDescription) VALUES(?,?,?,?)');
 if ($dbc->connect_error) {
     die("Connection failed: " . $dbc->connect_error);
 }
 
 $stmt->bind_param('ssss', $eventName, $eventLocation, $eventTime, $eventDescription);
+
 $event_created = true;
 $stmt->execute();
-// $response = $stmt->get_result();
 if (!$stmt->execute()) {
-    $event_created = false;
+    $event_created = False;
 }
 if ($event_created) {
     echo "Event created!";

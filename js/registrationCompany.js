@@ -12,7 +12,7 @@ $(function () {
                 email: $("#email").val(),
                 password: $("#password").val(),
                 companyDescription: $("#companyDescription").val(),
-                accountType: "USER"
+                accountType: "COMPANY"
             },
             success: function (data) {
                 alert(data);

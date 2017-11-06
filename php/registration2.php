@@ -1,7 +1,6 @@
 <?php
 require 'dbConnection.php';
 
-
 $interest1 = $_POST["interest1"];
 $interest2 = $_POST["interest2"];
 $interest3 = $_POST["interest3"];

@@ -11,6 +11,9 @@ $row = mysqli_fetch_assoc($response); //Gets the first (and only) row as an asso
 ?>
 <div class="padding" style="padding-top: 50px;">
 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/company-profile.css">
+    <link rel="stylesheet" href="css/style.css">
 </div>
 
 <div class="container-fluid">
@@ -37,7 +40,7 @@ $row = mysqli_fetch_assoc($response); //Gets the first (and only) row as an asso
                     <div class="card-text text-justify">
                         <div class="row">
                             <div class="col-lg-6 col-md-6">
-                                <h3>Bio</h3>
+                                <h3>Company Description</h3>
                             </div>
                             <?php if (isset($_SESSION['username']) && ($_SESSION['username'] == $query["id"])) : //we get query["id"] from profile.php ?>
                                 <!--                            Only show this if the user is viewing their own page-->
@@ -144,7 +147,7 @@ $row = mysqli_fetch_assoc($response); //Gets the first (and only) row as an asso
 
 </div>
     <!-- Create Event Modal -->
-    <!-- <div class="modal fade" id="createEventModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal fade" id="createEventModal" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">  
                 <div class="modal-header">
@@ -179,13 +182,21 @@ $row = mysqli_fetch_assoc($response); //Gets the first (and only) row as an asso
                 </div>
             </div>
         </div>
-    </div> -->
+    </div>
 </div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"
         integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
         crossorigin="anonymous"></script>
+
+
+<!-- Bootstrap core JavaScript -->
+<!--We load jQuery before Boostrap-->
+<script src="js/logout.js"></script>
+<script src="js/handlebars-v4.0.5.js"></script>
+<script src="js/getURLParameter.js"></script>
+<script src="js/profileEventHandlebars.js"></script>
 <script src="js/eventCreation.js"></script>
 <br>
 <br>

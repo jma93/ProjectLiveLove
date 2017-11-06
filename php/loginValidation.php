@@ -12,6 +12,7 @@ $stmt = $dbc->prepare('SELECT * FROM accounts WHERE username = ?');
 //s means string
 $stmt->bind_param('s', $username);
 //$query = "(SELECT * FROM accounts WHERE username= $username)";
+
 $stmt->execute();
 $response = $stmt->get_result();
 

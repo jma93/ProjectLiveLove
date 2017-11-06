@@ -5,7 +5,8 @@ $firstname = $_POST["firstname"];
 $username = $_POST["username"];
 $password = $_POST["password"];
 $email = $_POST["email"];
-$accountType = $_POST["accountType"];
+// just made account type to be company, rather than do it in the js file
+$accountType = "COMPANY";
 $companyDescription = $_POST["companyDescription"];
 $lastname = $_POST["lastname"];
 
@@ -32,7 +33,6 @@ if ($response->num_rows == 0) {
     //Insert into into database
     $stmt = $dbc -> prepare('INSERT INTO accounts(username, password, email, accountType) VALUES(?,?,?,?)');
     $stmt->bind_param('ssss', $username, $hashed_pass, $email, $accountType);
-
     if (!$stmt->execute()) {
         $user_created = false;
     }
