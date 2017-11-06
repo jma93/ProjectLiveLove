@@ -9,7 +9,8 @@ $(function () {
                 eventName: $("#eventName").val(),
                 eventLocation: $("#eventLocation").val(),
                 eventTime: $("#eventTime").val(), //getting the values from what was inputted in the form
-                eventDescription: $("#eventDescription").val()
+                eventDescription: $("#eventDescription").val(),
+                companyName: $("companyName").val()
             },
             success: function (data) {
                 alert(data);

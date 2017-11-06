@@ -10,7 +10,6 @@ $response = $stmt->get_result();
 $row = mysqli_fetch_assoc($response); //Gets the first (and only) row as an associative array
 ?>
 <div class="padding" style="padding-top: 50px;">
-
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/company-profile.css">
     <link rel="stylesheet" href="css/style.css">
@@ -105,7 +104,7 @@ $row = mysqli_fetch_assoc($response); //Gets the first (and only) row as an asso
                         <p class="card-text">{{Event_description}}</p>
                         <?php if (isset($_SESSION['username']) && ($_SESSION['username'] == $query["id"])) : //we get query["id"] from profile.php ?>
                             <button class = "btn btn-outline-primary" id = "viewVolunteers">View Volunteers</button>
-                            <button class = "btn btn-secondary" id = "editEvent">Edit Event</button>
+                            <button class = "btn btn-secondary" id = "emails">Get Mailing addresses</button>
                         <?php else : ?>
                             <div data-toggle="buttons">
                                 <label class="btn btn-outline-success">
@@ -139,7 +138,9 @@ $row = mysqli_fetch_assoc($response); //Gets the first (and only) row as an asso
         <input type="text" class="form-control"
                id="eventTime" placeholder="what time is the event?">
         <input type="text" class="form-control"
-               id="eventDescription" placeholder="Description of Event" required><br>
+               id="eventDescription" placeholder="Description of Event" required>
+        <input type "text" class = "form-control"
+                id = "companyName" placeholder = "Host Company" required><br>
         <button class="button" type="submit"
                 id="register">Create Event!             
         </button>

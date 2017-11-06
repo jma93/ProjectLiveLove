@@ -7,6 +7,7 @@ $eventName = $_POST["eventName"];
 $eventLocation = $_POST["eventLocation"];
 $eventTime = $_POST["eventTime"];
 $eventDescription = $_POST["eventDescription"];
+$companyName = $_POST["companyName"]
 
 
 //Check if the event exist in the first place
@@ -37,6 +38,19 @@ if ($event_created) {
 } else {
     echo "Error occured during event creation";
 }
+echo ($row['companyName']);
+// // insert event into company_event relationship
+
+// $stmt = $dbc -> prepare('INSERT INTO company_event(companyName, eventName) VALUES(?,?)');
+// $stmt -> bind_param('ss', $companyName, $eventName);
+// if (!$stmt->execute()) {
+//     $event_created = True;
+// }
+// if ($event_created) {
+//     echo "Created";
+// } else {
+//     echo "ERRPADFJAKS";
+// }
 //    $phonenumber= $_POST["phonenumber"];
 //    $city= $_POST["city"];
 //    $state= $_POST["state"];
