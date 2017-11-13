@@ -61,56 +61,32 @@
 </nav>
 <!--Navbar end-->
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="https://imagesloaded.desandro.com/imagesloaded.pkgd.min.js"></script>
+<script src="https://masonry.desandro.com/masonry.pkgd.min.js"></script>
+<script src="js/image-picker.js"></script>
+
+<script src="js/image-picker.min.js"></script>
+<script src="js/registration2.js"></script>
+
+<link href="css/image-picker.css" rel="stylesheet">
+
 <div class="container">
     <h2 style="text-align:center">Set Up Your Account</h2>
 
     <form id = "registration2Form" class="form-registration" role="form">
 
         <h4>Interests (Select all that apply)</h4>
-<!-- <<<<<<< HEAD
-        <div id = "interests">
-            <input class="interest_button" type="text" value="poverty & relief"/>
-            <input class="interest_button" type="text" value="health services"/>
-            <input class="interest_button" type="text" value="community building"/>
-            <br>
-            <input class="interest_button" type="text" value="social justice"/>
-            <input class="interest_button" type="text" value="environmentalism"/>
-            <input class="interest_button" type="text" value="other opportunities"/>
-        </div>
-        <img id="myImage" onclick="changeImage()" src="img/health.png" width="100" height="180">
-            <script>
-                function changeImage() {
-                    var image = document.getElementById('myImage');
-                    if (image.src.match("bulbon")) {
-                        image.src = "img/health.png";
-                    } else {
-                        image.src = "img/health_focus.png";
-                    }
-                }
-            </script>
-======= -->
-          <div class="row" align="center">
-            <img class="poverty" src="./img/poverty.png" >
-            <img src="./img/health.png">
-            <img src="./img/community building.png">
-            <img src="./img/social justice.png">
-            <img src="./img/environment.png">
-            <img src="./img/other.png">
-          </div> 
-            <!-- <div class="interest_button" type="submit"> 
-                <img src="./img/poverty.png"/> -->
-                <!-- value="poverty & relief" -->
-            <!-- </div>
-            <input class="interest_button" type="submit" value="health services"/>
-            <input class="interest_button" type="submit" value="community building"/>
-            <br>
-            <input class="interest_button" type="submit" value="social justice"/>
-            <input class="interest_button" type="submit" value="environmentalism"/>
-            <input class="interest_button" type="submit" value="other opportunities"/> -->
-
-
+            <select class="image-picker" multiple="multiple">
+                <option data-img-src='./img/poverty.png' value='4.jpg'>Poverty</option>
+                <option data-img-src='./img/health.png'>Health</option>
+                <option data-img-src='./img/community building.png' value='5.jpg'>Community Building</option>
+                <option data-img-src='./img/social justice.png' value='6.jpg'>Social Justice</option>
+                <option data-img-src='./img/environment.png' value='aom.jpg'>Environment</option>
+                <option data-img-src='./img/other.png' value='aom2.jpg'>Other</option>
+            </select>
         <button class="button" type="submit"
-                id="finish">Finish
+                id="finish"><a href = "registration3.html">Next!</a>
         </button>
     </form>
 </div>
