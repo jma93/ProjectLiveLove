@@ -2,29 +2,48 @@ ul.thumbnails.image_picker_selector {
   overflow: auto;
   list-style-image: none;
   list-style-position: outside;
-  list-style-type: none;
-  padding: 0px;
-  margin: 0px; }
+  list-style-type: none; 
+
+}
+
+div.container.stuff {
+  height: 50%;
+  width: 50%;
+  display: inline-grid;
+}
+
   ul.thumbnails.image_picker_selector ul {
     overflow: auto;
     list-style-image: none;
     list-style-position: outside;
     list-style-type: none;
     padding: 0px;
-    margin: 0px; }
-  ul.thumbnails.image_picker_selector li.group {width:100%;} 
+    margin: 0px;
+    display: inline-grid;
+  }
+
+
+  ul.thumbnails.image_picker_selector li.group {
+    width:50%;
+  } 
   ul.thumbnails.image_picker_selector li.group_title {
-    float: none; }
+    float: none;
+  }
   ul.thumbnails.image_picker_selector li {
     margin: 0px 12px 12px 0px;
     float: left; }
     ul.thumbnails.image_picker_selector li .thumbnail {
       padding: 6px;
-      border: 1px solid #dddddd;
+      border: 1px solid #ffffff;
       -webkit-user-select: none;
       -moz-user-select: none;
-      -ms-user-select: none; }
+      -ms-user-select: none;
+    }
       ul.thumbnails.image_picker_selector li .thumbnail img {
-        -webkit-user-drag: none; }
+        -webkit-user-drag: none;
+        height: 100px;
+   
+        }
     ul.thumbnails.image_picker_selector li .thumbnail.selected {
-      background: #cc0000; }
+      background: #ff0000;
+    }

@@ -64,31 +64,34 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 <script src="https://imagesloaded.desandro.com/imagesloaded.pkgd.min.js"></script>
 <script src="https://masonry.desandro.com/masonry.pkgd.min.js"></script>
-<script src="js/image-picker.js"></script>
 
 <script src="js/image-picker.min.js"></script>
 <script src="js/registration2.js"></script>
-
 <link href="css/image-picker.css" rel="stylesheet">
 
 <div class="container">
     <h2 style="text-align:center">Set Up Your Account</h2>
 
     <form id = "registration2Form" class="form-registration" role="form">
-
         <h4>Interests (Select all that apply)</h4>
-            <select class="image-picker" multiple="multiple">
-                <option data-img-src='./img/poverty.png' value='4.jpg'>Poverty</option>
-                <option data-img-src='./img/health.png'>Health</option>
-                <option data-img-src='./img/community building.png' value='5.jpg'>Community Building</option>
-                <option data-img-src='./img/social justice.png' value='6.jpg'>Social Justice</option>
-                <option data-img-src='./img/environment.png' value='aom.jpg'>Environment</option>
-                <option data-img-src='./img/other.png' value='aom2.jpg'>Other</option>
-            </select>
+        <select class="image-picker" multiple="multiple">
+        
+        <div class="stuff">
+            <option data-img-src='./img/poverty.png' value='Poverty'>Poverty</option>
+            <option data-img-src='./img/health.png' value = 'health'>Health</option>
+            <option data-img-src='./img/community building.png' value='Community Building'>Community Building</option>
+            <option data-img-src='./img/social justice.png' value='Social Justice'>Social Justice</option>
+            <option data-img-src='./img/environment.png' value='Environment'>Environment</option>
+            <option data-img-src='./img/other.png' value='Other'>Other</option>
+
+        </div>
+        
+        </select>   
         <button class="button" type="submit"
                 id="finish"><a href = "registration3.html">Next!</a>
         </button>
     </form>
+    
 </div>
 
 </body>
