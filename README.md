@@ -3,14 +3,12 @@ Website for Project Live Love that matches volunteers with fitting opportunities
 
 Team Members:
 
-Nineesha Koshy
+Jeffrey Ma
 
 Lily Li
 
-Yixin Sun
+Sammy Baek
 
-Allison Madson
+Jingbo Wang
 
-Catherine Zhuang
-
-Kevin Tian
+Ashwin Arathie
