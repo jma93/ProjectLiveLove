@@ -31,7 +31,7 @@ $row = mysqli_fetch_assoc($response); //Gets the first (and only) row as an asso
                             <span class="badge badge-danger">3 Current Events</span>
                             <div style="padding-top: 5px;">
                                 <span class="badge badge-pill badge-info">Poverty & Relief</span>
-                                <span class="badge badge-pill badge-success">Environmentalism</span>
+                                <span class="badge badge-pill badge-success">Community Building</span>
                             </div>
                         </div>
                     </div>
@@ -123,7 +123,7 @@ $row = mysqli_fetch_assoc($response); //Gets the first (and only) row as an asso
     </script>
 
 <!--creates the create event form -->
-<div class="container">
+<!-- <div class="container">
     <h2 style="text-align:center">Create an Event!</h2>
 
     <form id = "createEvent" class="form-registration" role="form">
@@ -144,7 +144,7 @@ $row = mysqli_fetch_assoc($response); //Gets the first (and only) row as an asso
         </button>
     </form>
 
-</div>
+</div> -->
     <!-- Create Event Modal -->
     <div class="modal fade" id="createEventModal" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog" role="document">
@@ -165,6 +165,12 @@ $row = mysqli_fetch_assoc($response); //Gets the first (and only) row as an asso
                         </div>
                         <div class="form-group row">
                             <label for="eventAddress" class="col-sm-3 col-form-label">Address:</label>
+                            <div class="col-sm-9">
+                                <input type="text" class="form-control" id="eventLocation" placeholder="Event Address">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="eventTime" class="col-sm-3 col-form-label">Time:</label>
                             <div class="col-sm-9">
                                 <input type="text" class="form-control" id="eventLocation" placeholder="Event Address">
                             </div>
@@ -195,7 +201,7 @@ $row = mysqli_fetch_assoc($response); //Gets the first (and only) row as an asso
 <script src="js/logout.js"></script>
 <script src="js/handlebars-v4.0.5.js"></script>
 <script src="js/getURLParameter.js"></script>
-<script src="js/profileEventHandlebars.js"></script>
+<script src="js/profileEventHandlebarsCompany.js"></script>
 <script src="js/eventCreation.js"></script>
 <br>
 <br>

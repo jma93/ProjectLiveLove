@@ -35,7 +35,8 @@ $row = mysqli_fetch_assoc($response); //Gets the first (and only) row as an asso
                             </span>
                             <div style="padding-top: 5px;">
                                 <span class="badge badge-pill badge-info">Poverty & Relief</span>
-                                <span class="badge badge-pill badge-success">Environmentalism</span>
+                                <span class="badge badge-pill badge-success">Community Building</span>
+                                <span class="badge badge-pill badge-success">Environment</span>
                             </div>
                         </div>
                     </div>
