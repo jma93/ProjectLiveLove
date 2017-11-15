@@ -59,19 +59,34 @@
     </div>
 </nav>
 <!--Navbar end-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="https://imagesloaded.desandro.com/imagesloaded.pkgd.min.js"></script>
+<script src="https://masonry.desandro.com/masonry.pkgd.min.js"></script>
+
+<script src="js/image-picker.min.js"></script>
+<script src="js/registration2.js"></script>
+<link href="css/image-picker2.css" rel="stylesheet">
 
 <div class="container">
-    <h2 style="text-align:center">Select a Company</h2>
+    <h2 style="text-align:center">Organizations you can join!</h2>
 
     <form id = "registration2Form" class="form-registration" role="form">
 
-        <h4 style="text-align:center"> Based on Your Interest</h4>
-
-        <button class="button" type="submit"
-                id="finish">Furniture Bank Atlanta
-        </button>
+        <select class="image-picker" multiple="multiple">
+            <option data-img-src='./img/company/furniture2.png' value='Furniture'>Furniture</option>
+            <option data-img-src='./img/company/gateway.jpg' value = 'gateway'>Gateway</option>
+            <option data-img-src='./img/company/restart320.png' value='Restart320'>Restart320</option>
+        </select>
     </form>
-</div>
 
+    <div style="text-align: center;">
+
+    <button class="button" type="submit"
+                id="finish"><a href = "login.php">Finish Registration!</a>
+                
+    </button>
+    </div>
+</div>
+<script src="js/registration.js"></script>
 </body>
 </html>

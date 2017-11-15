@@ -47,26 +47,45 @@ require 'navbar.php';
         <div class="text-center" style="margin-top: 30px">
             <h1 class="font-bold">Find Your Organization</h1>
         </div>
-
+        <p>
         <div class="container">
             <div class="row align-items-center">
                 <div class=col-md-3>
-                    <img class="img-fluid" src="http://www.duetsblog.com/uploads/image/intel_rgb_1700.png">
+                    <img class="img-fluid" src="./img/company/furniture2.png">
                 </div>
                 <div class=col-md-3>
-                    <img class="img-fluid" src="http://www.abannervision.com/img/logos/disney.png">
-                </div>
-                <div class=col-md-3>
-                    <img class="img-fluid"
-                         src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/2000px-Google_2015_logo.svg.png">
+                    <img class="img-fluid" src="./img/company/gateway.jpg">
                 </div>
                 <div class=col-md-3>
                     <img class="img-fluid"
-                         src="https://upload.wikimedia.org/wikipedia/en/thumb/b/b5/Boeing-Logo.svg/1280px-Boeing-Logo.svg.png">
+                         src="./img/company/restart320.png">
+                </div>
+                <div class=col-md-3>
+                    <img class="img-fluid"
+                         src="./img/company/atlanta outreach.jpg">
                 </div>
             </div>
         </div>
-
+        <div class="container">
+            <div class="row align-items-center">
+                <div class=col-md-3>
+                    <img class="img-fluid" src="./img/company/safehouse outreach.jpg">
+                </div>
+                 <div class=col-md-3>
+                    <img class="img-fluid"
+                         src="./img/company/jerusalem.jpg">
+                </div>
+                <div class=col-md-3>
+                    <img class="img-fluid" src="./img/company/veterans.png">
+                </div>
+                <div class=col-md-3>
+                    <img class="img-fluid"
+                         src="./img/company/nicholas house2.jpg">
+                </div>
+               
+            </div>
+        </div>
+        <p>
         <div class="text-center">
             <h3 class="font-bold">Don't see your organization? Search for more here!</h3>
 
@@ -91,6 +110,7 @@ require 'navbar.php';
                     <span class="cbp-ig-category">homeless, hungry, poor, disaster relief</span>
                 </a>
             </li>
+
             <li>
                 <a href="#">
                     <span class="cbp-ig-icon cbp-ig-icon-ribbon"></span>
