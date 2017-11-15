@@ -9,8 +9,18 @@
 $arr = array(
     array(
         "Event_Name" => "Furniture Bank of Metro Atlanta",
-        "Organization_Name" => "Animal Shelter",
+        "Organization_Name" => "908 Murphy Ave SW, Atlanta, GA 30310",
         "Event_description" => "Deliver furniture to needy families"
+    ),
+    array(
+        "Event_Name" => "Gateway Center",
+        "Organization_Name" => "Animal Shelter",
+        "Event_description" => "Give out food and resources to the poor"
+    ),
+    array(
+        "Event_Name" => "ReStart3:20",
+        "Organization_Name" => "Animal Shelter",
+        "Event_description" => "Help redesignate spaces as shelter for the homeless"
     ),
 );
 echo json_encode($arr);

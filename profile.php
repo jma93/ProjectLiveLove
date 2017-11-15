@@ -84,6 +84,10 @@ if (array_key_exists('id', $query)) {
 <script src="js/handlebars-v4.0.5.js"></script>
 <script src="js/getURLParameter.js"></script>
 <script src="js/profileEventHandlebars.js"></script>
+<script src="js/profileEventHandlebarscompany.js"></script>
+
+
+
 
 
 

@@ -4,7 +4,7 @@
 $(function () {
     $.ajax({
         type: 'GET',
-        url: '/ProjectLiveLove/php/getEventscompany.php',
+        url: '/ProjectLiveLove/php/getEvents.php',
         data: {
             username: $(document).getUrlParam("id")
         },

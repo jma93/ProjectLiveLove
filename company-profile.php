@@ -28,7 +28,7 @@ $row = mysqli_fetch_assoc($response); //Gets the first (and only) row as an asso
                                 <?php echo htmlspecialchars($row['companyName']); ?>
                             </h3>
                             <h6 class="card-subtitle mb-2 text-muted">Organization</h6>
-                            <span class="badge badge-danger">3 Current Events</span>
+                            <span class="badge badge-danger">1 Current Events</span>
                             <div style="padding-top: 5px;">
                                 <span class="badge badge-pill badge-info">Poverty & Relief</span>
                                 <span class="badge badge-pill badge-success">Community Building</span>
@@ -89,7 +89,7 @@ $row = mysqli_fetch_assoc($response); //Gets the first (and only) row as an asso
 
     <!-- Template for Handlebars -->
     <script id="event-template" type="text/x-handlebars-template">
-        {{#each this}}
+
         <div class="card event-listing">
             <div class="card-block">
                 <div class="row">
@@ -97,9 +97,9 @@ $row = mysqli_fetch_assoc($response); //Gets the first (and only) row as an asso
                         <div class="img float-left"
                              style="background-image: url('http://www.jqueryscript.net/images/Simplest-Responsive-jQuery-Image-Lightbox-Plugin-simple-lightbox.jpg'); margin-right:15px;">
                         </div>
-                        <h4 class="card-title">{{Event_Name}}</h4>
-                        <h6 class="card-subtitle mb-2 text-muted">{{Organization_Name}}</h6>
-                        <p class="card-text">{{Event_description}}</p>
+                        <h4 class="card-title">Furniture Bank of Metro Atlanta</h4>
+                        <h6 class="card-subtitle mb-2 text-muted">908 Murphy Ave SW, Atlanta, GA 30310</h6>
+                        <p class="card-text">Deliver furniture to needy families</p>
                         <?php if (isset($_SESSION['username']) && ($_SESSION['username'] == $query["id"])) : //we get query["id"] from profile.php ?>
                             <button class = "btn btn-outline-primary" id = "viewVolunteers">View Volunteers</button>
                             <button class = "btn btn-secondary" id = "emails">Get Mailing addresses</button>
@@ -119,7 +119,7 @@ $row = mysqli_fetch_assoc($response); //Gets the first (and only) row as an asso
                 </div>
             </div>
         </div>
-        {{/each}}
+
     </script>
 
 <!--creates the create event form -->
@@ -201,7 +201,7 @@ $row = mysqli_fetch_assoc($response); //Gets the first (and only) row as an asso
 <script src="js/logout.js"></script>
 <script src="js/handlebars-v4.0.5.js"></script>
 <script src="js/getURLParameter.js"></script>
-<script src="js/profileEventHandlebarsCompany.js"></script>
+<!-- <script src="js/profileEventHandlebarsCompany.js"></script> -->
 <script src="js/eventCreation.js"></script>
 <br>
 <br>

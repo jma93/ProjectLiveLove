@@ -110,5 +110,6 @@ $row = mysqli_fetch_assoc($response); //Gets the first (and only) row as an asso
     </script>
 </div>
 
+
 <br>
 <br>
